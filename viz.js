@@ -11,16 +11,22 @@ function getLocationData() {
 
 function barChart(response) {
     r = JSON.parse(response);
+    console.log(r["x"].length)
 
     var data = [
         {
           x: r["x"],
           y: r["y"],
-          type: 'bar'
+          type: 'bar',
         }
     ];
     var layout = { 
-        width: 1000
+        xaxis: {
+            dtick: 1,
+            tickwidth: 1,
+            ticklen: 5,
+            type: 'category'
+        }
     };
 
     Plotly.newPlot('barchart', data, layout);
