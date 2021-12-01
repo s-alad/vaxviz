@@ -21,6 +21,10 @@ def index():
 def viz():
         return bottle.static_file('viz.js', root='.')
 
+@bottle.route('/styles.css')
+def styles():
+        return bottle.static_file('styles.css', root='.')
+
 @bottle.route("/bar")
 def bar():
         print()
