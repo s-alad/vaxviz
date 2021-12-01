@@ -11,6 +11,7 @@
         <script src="./viz.js"></script>
     </head>
     <body onload="getData();">
+
         <div class="header">
             <div class="title">
                 VAXVIZ
@@ -19,13 +20,41 @@
                 Visualization of Vaccination data
             </div>  
         </div>
-        <div id="barchart" ></div>
-        <div id="piechart" ></div>
 
-        <input id="location"></input>
-        <button onclick="getLocationData()">submit</button>
-        <div id="linechart"></div>
-        <div></div>
-        
+        <div class="stats">
+            <div id="cases" class="stat-item">
+
+            </div>
+
+            <div id="active" class="stat-item">
+            </div>
+
+            <div id="recovered" class="stat-item">
+            </div>
+
+            <div id="deaths" class="stat-item">
+            </div>
+
+        </div>
+
+        <div id="bar-wrapper">
+            <div id="bar-title">
+                Percent Vaccinated per County
+            </div>
+            <div id="barchart" ></div>
+        </div>
+
+        <div id="pie-wrapper">
+            <div id="piechart" ></div>
+        </div>
+
+        <div id="input-wrapper">
+            <input id="location"></input>
+            <button onclick="getLocationData()">submit</button>
+        </div>
+
+        <div id="linechart-wrapper">
+            <div id="linechart"></div>
+        </div>
     </body>
 </html>

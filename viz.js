@@ -58,8 +58,14 @@ function pieChart(response) {
         height: 400,
         width: 500
     };
+    var config = {
+        displayModeBar: false,
+        editable: false,
+        scrollable: false,
+        staticPlot: true,
+    }
 
-    Plotly.newPlot('piechart', data, layout);
+    Plotly.newPlot('piechart', data, layout, config);
 }
 
 function lineChart(response) {
@@ -76,10 +82,16 @@ function lineChart(response) {
         }
     ];
     var layout = { 
-        width: 1000
+        width: 500,
     };
+    var config = {
+        displayModeBar: false,
+        editable: false,
+        scrollable: false,
+        staticPlot: true,
+    }
 
-    Plotly.newPlot('linechart', data, layout);
+    Plotly.newPlot('linechart', data, layout, config);
 }
                                                             
 function ajaxGetRequest(path, callback) {
