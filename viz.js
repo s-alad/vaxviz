@@ -1,20 +1,69 @@
 function getData() {
-    //return graphs
-    ajaxGetRequest("/vacByLoc", showBar);
+    ajaxGetRequest("/bar", barChart);
+    ajaxGetRequest("/pie", pieChart);
 }
 
 function getLocationData() {
-    ajaxPostRequest();
+    let data = document.getElementById("location").value;
+    console.log(data)
+    ajaxPostRequest("/line", data, lineChart);
 }
 
-function showBar(response) {
-    // Data is always sent in JSON, so we must first convert it                                                                                                                 
-    let data = JSON.parse(response);
-    // Now write the code that uses data to create the scatter plot
+function barChart(response) {
+    r = JSON.parse(response);
+
+    var data = [
+        {
+          x: r["x"],
+          y: r["y"],
+          type: 'bar'
+        }
+    ];
+    var layout = { 
+        width: 1000
+    };
+
+    Plotly.newPlot('barchart', data, layout);
 }
 
-// path -- string specifying URL to which data request is sent 
-// callback -- function called by JavaScript when response is received                                                              
+function pieChart(response) {
+    r = JSON.parse(response);
+    var data = [
+        {
+            values: r["values"],
+            labels: ['Jansen', 'Moderna', 'Pfizer', 'Other'],
+            type: 'pie'
+        }
+    ];
+    var layout = 
+    {
+        height: 400,
+        width: 500
+    };
+
+    Plotly.newPlot('piechart', data, layout);
+}
+
+function lineChart(response) {
+    r = JSON.parse(response);
+    console.log(r)
+    console.log(r["x"])
+    console.log(r["y"])
+
+    var data = [
+        {
+          x: r["x"],
+          y: r["y"],
+          type: 'bar'
+        }
+    ];
+    var layout = { 
+        width: 1000
+    };
+
+    Plotly.newPlot('linechart', data, layout);
+}
+                                                            
 function ajaxGetRequest(path, callback) {
     let request = new XMLHttpRequest();
     request.onreadystatechange = function() {

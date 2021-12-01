@@ -12,3 +12,15 @@ body {
     font-size: 40px;
 }
 
+#barchart {
+
+    background-color: aquamarine;
+}
+
+#piechart {
+    background-color: aquamarine;
+}
+
+#linechart {
+    background-color: aquamarine;
+}
