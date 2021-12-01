@@ -1,32 +1,40 @@
 function getData() {
-    //return graphs
-    ajaxGetRequest("/vacByLoc", lineChart);
+    ajaxGetRequest("/bar", barChart);
+    ajaxGetRequest("/pie", pieChart);
 }
 
 function getLocationData() {
-    ajaxPostRequest();
+    let data = document.getElementById("location").value;
+    console.log(data)
+    ajaxPostRequest("/line", data, lineChart);
 }
 
-function barChart() {
+function barChart(response) {
+    r = JSON.parse(response);
+
     var data = [
         {
-          x: ['giraffes', 'orangutans', 'monkeys'],
-          y: [20, 14, 23],
+          x: r["x"],
+          y: r["y"],
           type: 'bar'
         }
     ];
-    Plotly.newPlot('barchart', data);
+    var layout = { 
+        width: 1000
+    };
+
+    Plotly.newPlot('barchart', data, layout);
 }
 
-function pieChart() {
+function pieChart(response) {
+    r = JSON.parse(response);
     var data = [
         {
-            values: [19, 26, 55],
-            labels: ['Residential', 'Non-Residential', 'Utility'],
+            values: r["values"],
+            labels: ['Jansen', 'Moderna', 'Pfizer', 'Other'],
             type: 'pie'
         }
     ];
-    
     var layout = 
     {
         height: 400,
@@ -37,13 +45,25 @@ function pieChart() {
 }
 
 function lineChart(response) {
-    // Data is always sent in JSON, so we must first convert it                                                                                                                 
-    // Now write the code that uses data to create the scatter plot
+    r = JSON.parse(response);
+    console.log(r)
+    console.log(r["x"])
+    console.log(r["y"])
+
+    var data = [
+        {
+          x: r["x"],
+          y: r["y"],
+          type: 'bar'
+        }
+    ];
+    var layout = { 
+        width: 1000
+    };
+
+    Plotly.newPlot('linechart', data, layout);
 }
-
-
-// path -- string specifying URL to which data request is sent 
-// callback -- function called by JavaScript when response is received                                                              
+                                                            
 function ajaxGetRequest(path, callback) {
     let request = new XMLHttpRequest();
     request.onreadystatechange = function() {
