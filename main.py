@@ -11,15 +11,19 @@ def load_data( ):
         info = data.json_loader(url)
         heads = ['date','location','administered_janssen','administered_moderna','administered_pfizer','administered_unk_manuf','series_complete_pop_pct']
         data.save_data(heads, info, 'saved_data.csv')
-
+load_data()
 
 @bottle.route('/')
 def index():
         return bottle.static_file('index.html', root='.')
 
-@bottle.route('/viz.js/')
+@bottle.route('/viz.js')
 def viz():
         return bottle.static_file('viz.js', root='.')
+
+@bottle.route('/styles.css')
+def styles():
+        return bottle.static_file('styles.css', root='.')
 
 @bottle.route("/bar")
 def bar():

@@ -1,17 +1,46 @@
 function getData() {
     //return graphs
-    ajaxGetRequest("/vacByLoc", showBar);
+    ajaxGetRequest("/vacByLoc", lineChart);
 }
 
 function getLocationData() {
     ajaxPostRequest();
 }
 
-function showBar(response) {
+function barChart() {
+    var data = [
+        {
+          x: ['giraffes', 'orangutans', 'monkeys'],
+          y: [20, 14, 23],
+          type: 'bar'
+        }
+    ];
+    Plotly.newPlot('barchart', data);
+}
+
+function pieChart() {
+    var data = [
+        {
+            values: [19, 26, 55],
+            labels: ['Residential', 'Non-Residential', 'Utility'],
+            type: 'pie'
+        }
+    ];
+    
+    var layout = 
+    {
+        height: 400,
+        width: 500
+    };
+
+    Plotly.newPlot('piechart', data, layout);
+}
+
+function lineChart(response) {
     // Data is always sent in JSON, so we must first convert it                                                                                                                 
-    let data = JSON.parse(response);
     // Now write the code that uses data to create the scatter plot
 }
+
 
 // path -- string specifying URL to which data request is sent 
 // callback -- function called by JavaScript when response is received                                                              
