@@ -101,14 +101,14 @@ if (__name__ == "__main__"):
 
     def main():
         print('-')
-        print(max_value(data, 'date'))
-        print(init_dictionary(data, 'location'))
-        print(sum_matches(data, 'location', 'NV', 'administered_moderna'))
+        #print(max_value(data, 'date'))
+        #print(init_dictionary(data, 'location'))
+        #print(sum_matches(data, 'location', 'NV', 'administered_moderna'))
         #print(copy_matching(data, 'date', '2021-09-27T00:00:00.000'))
         #print(dic_list_gen(['Example','Other lengths'], [['Made-Up','Possible']]))
         #print(dic_list_gen(['Second'], [['Example'],['Also fake']]))
         #print(read_values("smallDataFile.csv"))
-        #print(make_lists(['Example'], [{'Example': 'Made-up', 'Extra Keys' : 'Possible'}]))
+        print(make_lists(['Example'], [{'Example': 'Made-up', 'Extra Keys' : 'Possible'}]))
         #print(write_values("pretend.csv", [['2021-08-07' ,'NY']]))
         #print(write_values("emp.csv", [['Hello There'], ['Embed , Comma']]))
         #print(make_values_numeric(['number'], {'name' : 'ValJean', 'number' : '24601'}))

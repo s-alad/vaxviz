@@ -12,6 +12,9 @@ function getLocationData() {
 function barChart(response) {
     r = JSON.parse(response);
     console.log(r["x"].length)
+    console.log(r["y"].length)
+    console.log(r["x"])
+    console.log(r["y"])
 
     var data = [
         {
@@ -22,14 +25,23 @@ function barChart(response) {
     ];
     var layout = { 
         xaxis: {
-            dtick: 1,
             tickwidth: 1,
             ticklen: 5,
-            type: 'category'
-        }
+            type: 'category',
+        },
+        yaxis: {
+            ticksuffix: '%'
+        },
+        width: 1000,
     };
+    var config = {
+        displayModeBar: false,
+        editable: false,
+        scrollable: false,
+        staticPlot: true,
+    }
 
-    Plotly.newPlot('barchart', data, layout);
+    Plotly.newPlot('barchart', data, layout, config);
 }
 
 function pieChart(response) {

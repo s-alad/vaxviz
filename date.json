@@ -1,0 +1,569 @@
+[
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "SC",
+        "administered_janssen": "204002",
+        "administered_moderna": "2414589",
+        "administered_pfizer": "3574100",
+        "administered_unk_manuf": "1924",
+        "series_complete_pop_pct": 51.4
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "VI",
+        "administered_janssen": "1841",
+        "administered_moderna": "35101",
+        "administered_pfizer": "82866",
+        "administered_unk_manuf": "0",
+        "series_complete_pop_pct": 49.0
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "HI",
+        "administered_janssen": "55136",
+        "administered_moderna": "668664",
+        "administered_pfizer": "1266453",
+        "administered_unk_manuf": "94064",
+        "series_complete_pop_pct": 61.0
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "AK",
+        "administered_janssen": "39334",
+        "administered_moderna": "373900",
+        "administered_pfizer": "543526",
+        "administered_unk_manuf": "748",
+        "series_complete_pop_pct": 54.2
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "KS",
+        "administered_janssen": "120545",
+        "administered_moderna": "1440523",
+        "administered_pfizer": "2134455",
+        "administered_unk_manuf": "3040",
+        "series_complete_pop_pct": 54.6
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "KY",
+        "administered_janssen": "210521",
+        "administered_moderna": "2254313",
+        "administered_pfizer": "2950111",
+        "administered_unk_manuf": "1916",
+        "series_complete_pop_pct": 52.1
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "VA",
+        "administered_janssen": "448329",
+        "administered_moderna": "4719663",
+        "administered_pfizer": "7925633",
+        "administered_unk_manuf": "7255",
+        "series_complete_pop_pct": 64.9
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "GU",
+        "administered_janssen": "10862",
+        "administered_moderna": "88356",
+        "administered_pfizer": "175368",
+        "administered_unk_manuf": "44",
+        "series_complete_pop_pct": 73.3
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "WY",
+        "administered_janssen": "26607",
+        "administered_moderna": "280262",
+        "administered_pfizer": "325371",
+        "administered_unk_manuf": "569",
+        "series_complete_pop_pct": 45.6
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "CA",
+        "administered_janssen": "2079749",
+        "administered_moderna": "22581070",
+        "administered_pfizer": "34921582",
+        "administered_unk_manuf": "15207",
+        "series_complete_pop_pct": 63.2
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "OK",
+        "administered_janssen": "135670",
+        "administered_moderna": "1984278",
+        "administered_pfizer": "2757341",
+        "administered_unk_manuf": "1014",
+        "series_complete_pop_pct": 51.5
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "VT",
+        "administered_janssen": "48984",
+        "administered_moderna": "443859",
+        "administered_pfizer": "626590",
+        "administered_unk_manuf": "875",
+        "series_complete_pop_pct": 72.9
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "TX",
+        "administered_janssen": "1371063",
+        "administered_moderna": "14036726",
+        "administered_pfizer": "21834482",
+        "administered_unk_manuf": "2935",
+        "series_complete_pop_pct": 54.7
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "MH",
+        "administered_janssen": "2313",
+        "administered_moderna": "40810",
+        "administered_pfizer": "2429",
+        "administered_unk_manuf": "2",
+        "series_complete_pop_pct": 28.3
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "WV",
+        "administered_janssen": "44372",
+        "administered_moderna": "766733",
+        "administered_pfizer": "879281",
+        "administered_unk_manuf": "474",
+        "series_complete_pop_pct": 41.5
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "IH2",
+        "administered_janssen": "35928",
+        "administered_moderna": "909075",
+        "administered_pfizer": "922397",
+        "administered_unk_manuf": "168",
+        "series_complete_pop_pct": 37.8
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "NE",
+        "administered_janssen": "85351",
+        "administered_moderna": "954776",
+        "administered_pfizer": "1551845",
+        "administered_unk_manuf": "5269",
+        "series_complete_pop_pct": 57.4
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "NM",
+        "administered_janssen": "104132",
+        "administered_moderna": "1284291",
+        "administered_pfizer": "1730342",
+        "administered_unk_manuf": "6561",
+        "series_complete_pop_pct": 63.5
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "IA",
+        "administered_janssen": "161343",
+        "administered_moderna": "1690258",
+        "administered_pfizer": "2348536",
+        "administered_unk_manuf": "414",
+        "series_complete_pop_pct": 56.7
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "BP2",
+        "administered_janssen": "13138",
+        "administered_moderna": "107091",
+        "administered_pfizer": "137570",
+        "administered_unk_manuf": "31",
+        "series_complete_pop_pct": 0.0
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "AS",
+        "administered_janssen": "547",
+        "administered_moderna": "18797",
+        "administered_pfizer": "48522",
+        "administered_unk_manuf": "1",
+        "series_complete_pop_pct": 66.2
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "MS",
+        "administered_janssen": "80190",
+        "administered_moderna": "1303161",
+        "administered_pfizer": "1794272",
+        "administered_unk_manuf": "2005",
+        "series_complete_pop_pct": 46.9
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "MA",
+        "administered_janssen": "366052",
+        "administered_moderna": "4508290",
+        "administered_pfizer": "6735237",
+        "administered_unk_manuf": "424",
+        "series_complete_pop_pct": 71.2
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "RP",
+        "administered_janssen": "2334",
+        "administered_moderna": "26820",
+        "administered_pfizer": "4700",
+        "administered_unk_manuf": "0",
+        "series_complete_pop_pct": 73.3
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "IN",
+        "administered_janssen": "277101",
+        "administered_moderna": "2841409",
+        "administered_pfizer": "4608876",
+        "administered_unk_manuf": "26376",
+        "series_complete_pop_pct": 50.6
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "MD",
+        "administered_janssen": "330279",
+        "administered_moderna": "3500157",
+        "administered_pfizer": "5613556",
+        "administered_unk_manuf": "13911",
+        "series_complete_pop_pct": 67.6
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "RI",
+        "administered_janssen": "58915",
+        "administered_moderna": "665997",
+        "administered_pfizer": "1020281",
+        "administered_unk_manuf": "1179",
+        "series_complete_pop_pct": 72.6
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "WA",
+        "administered_janssen": "438852",
+        "administered_moderna": "4295598",
+        "administered_pfizer": "6634057",
+        "administered_unk_manuf": "8571",
+        "series_complete_pop_pct": 65.0
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "IL",
+        "administered_janssen": "611460",
+        "administered_moderna": "6522451",
+        "administered_pfizer": "10765363",
+        "administered_unk_manuf": "24329",
+        "series_complete_pop_pct": 61.7
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "MO",
+        "administered_janssen": "225878",
+        "administered_moderna": "2679960",
+        "administered_pfizer": "4492077",
+        "administered_unk_manuf": "2303",
+        "series_complete_pop_pct": 50.9
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "SD",
+        "administered_janssen": "36172",
+        "administered_moderna": "457448",
+        "administered_pfizer": "656052",
+        "administered_unk_manuf": "132",
+        "series_complete_pop_pct": 54.6
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "MN",
+        "administered_janssen": "328126",
+        "administered_moderna": "3050428",
+        "administered_pfizer": "4868049",
+        "administered_unk_manuf": "2571",
+        "series_complete_pop_pct": 62.5
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "AR",
+        "administered_janssen": "108274",
+        "administered_moderna": "1517267",
+        "administered_pfizer": "1895272",
+        "administered_unk_manuf": "3268",
+        "series_complete_pop_pct": 49.3
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "NC",
+        "administered_janssen": "459815",
+        "administered_moderna": "5071291",
+        "administered_pfizer": "8033272",
+        "administered_unk_manuf": "869",
+        "series_complete_pop_pct": 54.2
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "PR",
+        "administered_janssen": "140646",
+        "administered_moderna": "2120976",
+        "administered_pfizer": "3140741",
+        "administered_unk_manuf": "504",
+        "series_complete_pop_pct": 74.1
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "MT",
+        "administered_janssen": "54182",
+        "administered_moderna": "563172",
+        "administered_pfizer": "705192",
+        "administered_unk_manuf": "1541",
+        "series_complete_pop_pct": 51.9
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "VA2",
+        "administered_janssen": "233494",
+        "administered_moderna": "3301954",
+        "administered_pfizer": "2975708",
+        "administered_unk_manuf": "281",
+        "series_complete_pop_pct": 0.0
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "DE",
+        "administered_janssen": "55088",
+        "administered_moderna": "561108",
+        "administered_pfizer": "828911",
+        "administered_unk_manuf": "1712",
+        "series_complete_pop_pct": 61.6
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "WI",
+        "administered_janssen": "303270",
+        "administered_moderna": "3163672",
+        "administered_pfizer": "4726355",
+        "administered_unk_manuf": "1512",
+        "series_complete_pop_pct": 59.5
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "MP",
+        "administered_janssen": "993",
+        "administered_moderna": "10442",
+        "administered_pfizer": "70737",
+        "administered_unk_manuf": "0",
+        "series_complete_pop_pct": 69.0
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "DC",
+        "administered_janssen": "33111",
+        "administered_moderna": "427932",
+        "administered_pfizer": "704368",
+        "administered_unk_manuf": "470",
+        "series_complete_pop_pct": 64.5
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "GA",
+        "administered_janssen": "302564",
+        "administered_moderna": "4942731",
+        "administered_pfizer": "7106945",
+        "administered_unk_manuf": "12930",
+        "series_complete_pop_pct": 49.6
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "NV",
+        "administered_janssen": "168239",
+        "administered_moderna": "1390792",
+        "administered_pfizer": "2403689",
+        "administered_unk_manuf": "509",
+        "series_complete_pop_pct": 54.5
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "MI",
+        "administered_janssen": "412629",
+        "administered_moderna": "5033778",
+        "administered_pfizer": "7301940",
+        "administered_unk_manuf": "1912",
+        "series_complete_pop_pct": 54.6
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "ME",
+        "administered_janssen": "130551",
+        "administered_moderna": "908316",
+        "administered_pfizer": "1194208",
+        "administered_unk_manuf": "2136",
+        "series_complete_pop_pct": 72.3
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "FM",
+        "administered_janssen": "12315",
+        "administered_moderna": "65527",
+        "administered_pfizer": "2205",
+        "administered_unk_manuf": "2",
+        "series_complete_pop_pct": 41.5
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "ID",
+        "administered_janssen": "75292",
+        "administered_moderna": "767836",
+        "administered_pfizer": "1037069",
+        "administered_unk_manuf": "2665",
+        "series_complete_pop_pct": 45.2
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "AZ",
+        "administered_janssen": "322968",
+        "administered_moderna": "3842041",
+        "administered_pfizer": "5410753",
+        "administered_unk_manuf": "18662",
+        "series_complete_pop_pct": 54.7
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "TN",
+        "administered_janssen": "234996",
+        "administered_moderna": "3131939",
+        "administered_pfizer": "4768768",
+        "administered_unk_manuf": "40203",
+        "series_complete_pop_pct": 49.5
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "PA",
+        "administered_janssen": "660933",
+        "administered_moderna": "7188711",
+        "administered_pfizer": "10459918",
+        "administered_unk_manuf": "1344",
+        "series_complete_pop_pct": 58.4
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "OH",
+        "administered_janssen": "556914",
+        "administered_moderna": "5559642",
+        "administered_pfizer": "8284559",
+        "administered_unk_manuf": "17938",
+        "series_complete_pop_pct": 53.0
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "AL",
+        "administered_janssen": "154204",
+        "administered_moderna": "2308635",
+        "administered_pfizer": "2779368",
+        "administered_unk_manuf": "286",
+        "series_complete_pop_pct": 46.2
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "NY",
+        "administered_janssen": "1242739",
+        "administered_moderna": "11008193",
+        "administered_pfizer": "17658861",
+        "administered_unk_manuf": "11745",
+        "series_complete_pop_pct": 68.5
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "CO",
+        "administered_janssen": "306451",
+        "administered_moderna": "3383055",
+        "administered_pfizer": "4917558",
+        "administered_unk_manuf": "6732",
+        "series_complete_pop_pct": 63.2
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "DD2",
+        "administered_janssen": "293711",
+        "administered_moderna": "2221296",
+        "administered_pfizer": "4042270",
+        "administered_unk_manuf": "20498",
+        "series_complete_pop_pct": 0.0
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "FL",
+        "administered_janssen": "1326310",
+        "administered_moderna": "11613081",
+        "administered_pfizer": "17897053",
+        "administered_unk_manuf": "112199",
+        "series_complete_pop_pct": 61.4
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "LA",
+        "administered_janssen": "175983",
+        "administered_moderna": "2150930",
+        "administered_pfizer": "2887287",
+        "administered_unk_manuf": "2684",
+        "series_complete_pop_pct": 48.9
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "ND",
+        "administered_janssen": "35564",
+        "administered_moderna": "356324",
+        "administered_pfizer": "503998",
+        "administered_unk_manuf": "307",
+        "series_complete_pop_pct": 48.8
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "NH",
+        "administered_janssen": "102007",
+        "administered_moderna": "808270",
+        "administered_pfizer": "1227026",
+        "administered_unk_manuf": "60",
+        "series_complete_pop_pct": 64.8
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "CT",
+        "administered_janssen": "224938",
+        "administered_moderna": "2246289",
+        "administered_pfizer": "3524879",
+        "administered_unk_manuf": "1183",
+        "series_complete_pop_pct": 72.0
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "NJ",
+        "administered_janssen": "494306",
+        "administered_moderna": "5185848",
+        "administered_pfizer": "7818099",
+        "administered_unk_manuf": "647",
+        "series_complete_pop_pct": 67.8
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "OR",
+        "administered_janssen": "248073",
+        "administered_moderna": "2319124",
+        "administered_pfizer": "3627607",
+        "administered_unk_manuf": "6312",
+        "series_complete_pop_pct": 64.0
+    },
+    {
+        "date": "2021-11-30T00:00:00.000",
+        "location": "UT",
+        "administered_janssen": "160756",
+        "administered_moderna": "1448361",
+        "administered_pfizer": "2406628",
+        "administered_unk_manuf": "294",
+        "series_complete_pop_pct": 55.3
+    }
+]

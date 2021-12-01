@@ -33,8 +33,23 @@ def bar():
     max_date_info = processing.copy_matching(info, 'date', max_date)
     [data.make_values_numeric(['series_complete_pop_pct'], i) for i in max_date_info]
 
+    print(json.dumps(max_date_info, indent=4))
+
     x = processing.init_dictionary(max_date_info, 'location')
     y = processing.init_dictionary(max_date_info, 'series_complete_pop_pct')
+
+    print(json.dumps(x, indent=4))
+    print(json.dumps(y, indent=4))
+    print(len(x), len(y))
+
+    with open('date.json', 'w') as f:
+        json.dump(max_date_info, f, indent=4)
+
+    with open('x.json', 'w') as f:
+        json.dump(x, f, indent=4)
+
+    with open('y.json', 'w') as f:
+        json.dump(y, f, indent=4)
 
     items = {'x': list(x.keys()), 'y': list(y.keys())}
     return json.dumps(items)
