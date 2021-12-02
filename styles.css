@@ -18,7 +18,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     color: #4183d7;
-    padding-bottom: 62px;
+    padding-bottom: 50px;
 }
 
 .title {
@@ -36,26 +36,42 @@ body {
 }
 
 .stat-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 250px;
     height: 80px;
-
+    padding: 10px 20px 10px 20px;
+    box-sizing: border-box;
     margin-left: 10px;
     margin-right: 10px;
+}
+.stat-item-title {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+.stat-item-value {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
 }
 #cases {
     background: #21caf2;
     background: -webkit-linear-gradient(90deg, #21caf2, #4efac0);  
     background: linear-gradient(90deg, #21caf2, #4efac0); 
 }
-#active {
-    background: #4692ff; 
-    background: -webkit-linear-gradient(to right, #4692ff, #a7b7fe); 
-    background: linear-gradient(to right, #4692ff, #a7b7fe); 
-}
-#recovered {
+#vaccines-initiated {
     background: #41dbb5;  
     background: -webkit-linear-gradient(to right, #41dbb5, #a3ecbd);  
     background: linear-gradient(to right, #41dbb5, #a3ecbd);
+}
+#vaccines-completed {
+    background: #4692ff; 
+    background: -webkit-linear-gradient(to right, #4692ff, #a7b7fe); 
+    background: linear-gradient(to right, #4692ff, #a7b7fe); 
 }
 #deaths {
     background: #bb61ff; 

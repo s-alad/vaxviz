@@ -11,7 +11,7 @@
         <script type="" src="https://cdn.plot.ly/plotly-2.6.3.min.js"></script>
         <script src="./viz.js"></script>
     </head>
-    <body onload="getData();">
+    <body onload="getData(); getStats();">
 
         <div class="header">
             <div class="title">
@@ -24,18 +24,40 @@
 
         <div class="stats">
             <div id="cases" class="stat-item">
-
-            </div>
-
-            <div id="active" class="stat-item">
-            </div>
-
-            <div id="recovered" class="stat-item">
+                <div class="stat-item-title">
+                    total cases
+                </div>
+                <div class="stat-item-value">
+                    <span id="cases-value"></span>
+                </div>
             </div>
 
             <div id="deaths" class="stat-item">
+                <div class="stat-item-title">
+                    total deaths
+                </div>
+                <div class="stat-item-value">
+                    <span id="deaths-value"></span>
+                </div>
             </div>
 
+            <div id="vaccines-initiated" class="stat-item">
+                <div class="stat-item-title">
+                    first doses
+                </div>
+                <div class="stat-item-value">
+                    <span id="vaccines-initiated-value"></span>
+                </div>
+            </div>
+
+            <div id="vaccines-completed" class="stat-item">
+                <div class="stat-item-title">
+                    second doses
+                </div>
+                <div class="stat-item-value">
+                    <span id="vaccines-completed-value"></span>
+                </div>
+            </div>
         </div>
 
         <div id="bar-wrapper">

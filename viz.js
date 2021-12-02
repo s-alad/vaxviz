@@ -3,9 +3,30 @@ function getData() {
     ajaxGetRequest("/pie", pieChart);
 }
 
+function getStats() {
+    console.log('in stats')
+    ajaxGetRequest("/stats", stats);
+}
+
 function getLocationData() {
     let data = document.getElementById("location").value;
     ajaxPostRequest("/line", data, lineChart);
+}
+
+function stats(response) {
+    let data = JSON.parse(response);
+
+    let cases = document.getElementById("cases-value");
+    cases.innerHTML = data["cases"];
+
+    let deaths = document.getElementById("deaths-value");
+    deaths.innerHTML = data["deaths"];
+
+    let vaccinesInitiated = document.getElementById("vaccines-initiated-value");
+    vaccinesInitiated.innerHTML = data["firstdose"];
+
+    let vaccinesCompleted = document.getElementById("vaccines-completed-value");
+    vaccinesCompleted.innerHTML = data["seconddose"];
 }
 
 function barChart(response) {
@@ -180,10 +201,7 @@ function ajaxGetRequest(path, callback) {
     request.open("GET", path);
     request.send();
 }
-
-// path -- string specifying URL to which data request is sent
-// data -- JSON blob being sent to the server
-// callback -- function called by JavaScript when response is received                                                              
+                                                       
 function ajaxPostRequest(path, data, callback) {
     let request = new XMLHttpRequest();
     request.onreadystatechange = function() {

@@ -68,6 +68,17 @@ def line():
 
     items = {'x': list(x.keys()), 'y': list(y)}
     return json.dumps(items)
-    
+
+@bottle.route("/stats")
+def stats():
+    stats = data.json_loader('https://api.covidactnow.org/v2/country/US.json?apiKey=7c09b79d4d3448e0b2bfd16618657563')
+    return {
+        "cases": stats['actuals']['cases'],
+        "deaths": stats['actuals']['deaths'],
+        "firstdose": stats['actuals']['vaccinationsInitiated'],
+        "seconddose": stats['actuals']['vaccinationsCompleted'],
+    }
+
+
 bottle.run(debug=True)
 
