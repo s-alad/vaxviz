@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 html {
     box-sizing: border-box;
@@ -6,23 +7,26 @@ html {
 
 body {
     margin: 0;
+
 }
 
 .header {
+    margin-top: 10px;
+    padding-top: 10px;
     padding: 20px;
     padding-left: 60px;
-    font-family: 'Montserrat', sans-serif;;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     color: #4183d7;
-    padding-bottom: 100px;
+    padding-bottom: 62px;
 }
 
 .title {
-    font-size: 40px;
+    font-size: 56px;
     
 }
 .subtitle {
-    font-size: 20px;
+    font-size: 24px;
 
 }
 
@@ -60,12 +64,33 @@ body {
 }
 
 
-
-#bar-wrapper {
+#bar-title-line {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
+}
+#bar-chart-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 6px;
+    font-size: 30px;
+}
+#bar-wrapper {
+    padding: 60px 60px 0px 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 27px;
+}
+#barchart-container {
+    width: 1000px;
+    height: 400px;
+    /* background: #36D1DC;  fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  
+    background: linear-gradient(to right, #5B86E5, #36D1DC);*/
+    background: #159957; 
+    background: -webkit-linear-gradient(to right, #155799, #159957);  
+    background: linear-gradient(to right, #155799, #159957);
+    
+    padding: 28px;
 }
 #barchart {
 
@@ -74,35 +99,137 @@ body {
 #piechart {
 
 }
-#pie-wrapper {
+
+#pie-title-line {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
+}
+#pie-chart-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 6px;
+    font-size: 30px;
+}
+#piechart-container {
+    padding: 28px;
+    width: 1000px;
+    height: 400px;
+    background: #7F00FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#pie-wrapper {
+
+    padding: 60px 60px 0px 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 27px;   
 }
 
 #input-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 27px;
 }
 #input-wrapper input {
-    width: 200px;
-    height: 30px;
-    border: 1px solid black;
+    border-style: none; background: transparent; outline: none; 
 }
 #input-wrapper button {
+    padding: 0; background: none; border: none; outline: none; cursor: pointer;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+.webflow-style-input {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 2px;
+    padding: 1.4rem 2rem 1.6rem;
+    background:transparent;
+}
+
+.webflow-style-input:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 999;
+    height: 8px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background-position: 0% 0%;
+    background: linear-gradient(to right, #B294FF, #57E6E6, #FEFFB8, #57E6E6, #B294FF, #57E6E6);
+    background-size: 500% auto;
+    animation: gradient 3s linear infinite;
+}
+
+.webflow-style-input input {
+    flex-grow: 1;
     width: 100px;
-    height: 30px;
-    border: 1px solid black;
+    color: #BFD2FF;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    vertical-align: middle;
+}
+
+.webflow-style-input input::-webkit-input-placeholder {
+    color: #7881A1;
+}
+
+.webflow-style-input button {
+    color: #a1a8c0;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    vertical-align: middle;
+    transition: color .25s;
+    cursor: pointer;
+}
+
+.webflow-style-input button:hover {
+    color: #BFD2FF;
 }
 
 #linechart-wrapper {
+    padding: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 27px;   
+}
+#linechart-container {
+    padding: 28px;
+    width: 1000px;
+    height: 400px;
+    background: #642B73;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #C6426E, #642B73);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #C6426E, #642B73); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+#line-title-line {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
+}
+#line-title {
+    
+}
+#line-chart-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 6px;
+    font-size: 30px;
 }
 
 #linechart {

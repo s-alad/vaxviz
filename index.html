@@ -7,6 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script type="" src="https://cdn.plot.ly/plotly-2.6.3.min.js"></script>
         <script src="./viz.js"></script>
     </head>
@@ -38,23 +39,46 @@
         </div>
 
         <div id="bar-wrapper">
-            <div id="bar-title">
-                Percent Vaccinated per County
+
+            <div id="barchart-container">
+                <div id="bar-title-line">
+                    <i class="fa fa-bar-chart" id="bar-chart-icon"></i>
+                    <div id="bar-title">
+                        percent vaccinated per county
+                    </div>
+                </div>
+                <div id="barchart" ></div>
             </div>
-            <div id="barchart" ></div>
         </div>
 
         <div id="pie-wrapper">
-            <div id="piechart" ></div>
-        </div>
-
-        <div id="input-wrapper">
-            <input id="location"></input>
-            <button onclick="getLocationData()">submit</button>
+            <div id="piechart-container">
+                <div id="pie-title-line">
+                    <i class="fa fa-pie-chart" id="pie-chart-icon"></i>
+                    <div id="pie-title">
+                        percent vaccinated per county
+                    </div>
+                </div>
+                <div id="piechart" ></div>
+            </div>
         </div>
 
         <div id="linechart-wrapper">
-            <div id="linechart"></div>
+            <div id="linechart-container">
+                <div id="line-title-line">
+                    <i class="fa fa-area-chart" id="line-chart-icon"></i>
+                        <div id="line-title">
+                            vaccination rate over time for specific state
+                        </div>
+                </div>
+                <div id="input-wrapper">
+                    <div class="webflow-style-input">
+                        <input id="location" class=""  placeholder="state"></input>
+                        <button onclick="getLocationData()" type="submit"><i class="fa fa-angle-right"></i></button>
+                    </div>
+                </div>
+                <div id="linechart"></div>
+            </div>
         </div>
     </body>
 </html>

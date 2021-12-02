@@ -36,22 +36,9 @@ def bar():
     print(json.dumps(max_date_info, indent=4))
 
     x = processing.init_dictionary(max_date_info, 'location')
-    y = processing.init_dictionary(max_date_info, 'series_complete_pop_pct')
+    y = [item for sublist in data.make_lists(['series_complete_pop_pct'], max_date_info) for item in sublist]
 
-    print(json.dumps(x, indent=4))
-    print(json.dumps(y, indent=4))
-    print(len(x), len(y))
-
-    with open('date.json', 'w') as f:
-        json.dump(max_date_info, f, indent=4)
-
-    with open('x.json', 'w') as f:
-        json.dump(x, f, indent=4)
-
-    with open('y.json', 'w') as f:
-        json.dump(y, f, indent=4)
-
-    items = {'x': list(x.keys()), 'y': list(y.keys())}
+    items = {'x': list(x.keys()), 'y': list(y)}
     return json.dumps(items)
 
 @bottle.route("/pie")
@@ -75,9 +62,11 @@ def line():
     location_info.sort(key = lambda x:x['date'])
 
     x = processing.init_dictionary(location_info, 'date')
-    y = processing.init_dictionary(location_info, 'series_complete_pop_pct')
+    y = [item for sublist in data.make_lists(['series_complete_pop_pct'], location_info) for item in sublist]
 
-    items = {'x': list(x.keys()), 'y': list(y.keys())}
+    print(y)
+
+    items = {'x': list(x.keys()), 'y': list(y)}
     return json.dumps(items)
     
 bottle.run(debug=True)

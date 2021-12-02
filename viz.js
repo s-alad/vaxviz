@@ -5,33 +5,59 @@ function getData() {
 
 function getLocationData() {
     let data = document.getElementById("location").value;
-    console.log(data)
     ajaxPostRequest("/line", data, lineChart);
 }
 
 function barChart(response) {
     r = JSON.parse(response);
-    console.log(r["x"].length)
-    console.log(r["y"].length)
-    console.log(r["x"])
-    console.log(r["y"])
 
     var data = [
         {
           x: r["x"],
           y: r["y"],
           type: 'bar',
+          marker: {
+            color: 'white'
+          }
         }
     ];
     var layout = { 
+        margin: {
+            l: 50,
+            r: 50,
+            b: 100,
+            t: 0,
+            pad: 0
+          },
         xaxis: {
+            tickmode: 'linear',
             tickwidth: 1,
             ticklen: 5,
             type: 'category',
+            showgrid: false,
+            showline: false,
+            tickcolor: 'white',
+            linecolor: 'white',
+            zerolinecolor: 'white',
+            tickfont: {
+                color: 'white'
+            },
         },
         yaxis: {
-            ticksuffix: '%'
+            ticksuffix: '%  ',
+            showgrid: false,
+            zeroline: true,
+            showline: true,
+            zerolinecolor: 'white',
+            tickcolor: 'white',
+            linecolor: 'white',
+            tickfont: {
+                color: 'white'
+            },
         },
+        plot_bgcolor:"transparent",
+        paper_bgcolor:"transparent",
+        height: 400,
         width: 1000,
     };
     var config = {
@@ -50,13 +76,25 @@ function pieChart(response) {
         {
             values: r["values"],
             labels: ['Jansen', 'Moderna', 'Pfizer', 'Other'],
-            type: 'pie'
+            type: 'pie',
+            marker: {
+                colors: ['#e7e7e7', 'white', '#f2f2f2', '#e7e7e7']
+              }
         }
     ];
     var layout = 
     {
-        height: 400,
-        width: 500
+        margin: {
+            l: 50,
+            r: 50,
+            b: 0,
+            t: 40,
+            pad: 0
+       },
+       plot_bgcolor:"transparent",
+       paper_bgcolor:"transparent",
+       height: 320,
+       width: 400,
     };
     var config = {
         displayModeBar: false,
@@ -70,19 +108,57 @@ function pieChart(response) {
 
 function lineChart(response) {
     r = JSON.parse(response);
-    console.log(r)
-    console.log(r["x"])
-    console.log(r["y"])
 
     var data = [
         {
           x: r["x"],
           y: r["y"],
-          type: 'bar'
+          type: 'bar',
+          marker: {
+            color: 'white'
+          }
         }
     ];
     var layout = { 
-        width: 500,
+        xaxis: {
+            tickwidth: 1,
+            ticklen: 1,
+            dtick: 14,
+            tickmode: 'linear',
+            type: 'category',   
+            showgrid: false,
+            showline: true,
+            tickcolor: 'white',
+            tickangle: 90,
+            tickcolor: 'white',
+            linecolor: 'white',
+            zerolinecolor: 'white',
+            tickfont: {
+                color: 'white'
+            },
+        },
+        yaxis: {
+            ticksuffix: '%  ',
+            showgrid: false,
+            zeroline: true,
+            showline: true,
+            zerolinecolor: 'white',
+            tickcolor: 'white',
+            linecolor: 'white',
+            tickfont: {
+                color: 'white'
+            },
+        },
+        margin: {
+            l: 50,
+            r: 50,
+            t: 40,
+            pad: 0
+       },
+       plot_bgcolor:"transparent",
+       paper_bgcolor:"transparent",
+       height: 220,
+       width: 800,
     };
     var config = {
         displayModeBar: false,
